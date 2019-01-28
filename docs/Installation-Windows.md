@@ -59,10 +59,10 @@ __System variable__ to edit the "Path" variable, click __New__ to add the
 following new paths.
 
 ```console
-%UserProfile%\Anaconda3\Scripts
-%UserProfile%\Anaconda3\Scripts\conda.exe
-%UserProfile%\Anaconda3
-%UserProfile%\Anaconda3\python.exe
+%programdata%\Anaconda3\Scripts
+%programdata%\Anaconda3\Scripts\conda.exe
+%programdata%\Anaconda3
+%programdata%\Anaconda3\python.exe
 ```
 
 ## Step 2: Setup and Activate a New Conda Environment
