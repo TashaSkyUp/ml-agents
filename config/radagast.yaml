@@ -1,0 +1,42 @@
+default:
+    trainer: ppo
+    epsilon: 0.4
+    gamma: 0.98
+    lambd: 0.915
+    learning_rate: 1.0e-4
+    max_steps: 5.0e7    
+    normalize: false
+    use_recurrent: false
+    use_curiosity: false
+    curiosity_strength: 0.03
+    curiosity_enc_size: 128
+    num_epoch: 3   
+    batch_size: 16
+    buffer_size: 25600
+    beta: 5.0e-3
+    hidden_units: 128
+    summary_freq: 768
+    time_horizon: 1000
+    num_layers: 3
+    normalize: false
+    sequence_length: 64
+    memory_size: 256
+
+
+
+Darkness v.2:
+    hidden_units: 128
+DarkSpawn1:
+    hidden_units: 128
+DarkSpawn2:
+    hidden_units: 128
+DarkSpawn3:
+    hidden_units: 128
+DarkSpawn4:
+    hidden_units: 128
+
+GolParBr:
+    hidden_units: 256
+    summary_freq: 256
+    num_layers: 2
+    num_epoch: 1  
