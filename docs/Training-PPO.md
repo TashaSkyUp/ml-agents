@@ -21,7 +21,9 @@ Learning](Training-Curriculum-Learning.md).
 For information about imitation learning, which uses a different training
 algorithm, see
 [Training with Imitation Learning](Training-Imitation-Learning.md).
-
+## Concepts
+### Buffer
+There is some buffer which must be muliples of batch-size
 ## Best Practices when training with PPO
 
 Successfully training a Reinforcement Learning model often involves tuning the
