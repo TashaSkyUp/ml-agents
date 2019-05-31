@@ -1,0 +1,74 @@
+default:
+    trainer: ppo
+    batch_size: 1024
+    beta: 5.0e-3
+    buffer_size: 10240
+    epsilon: 0.2
+    
+    # Gamma
+    # corresponds to the discount factor for future rewards.
+    # This can be thought of as how far into the future the
+    # agent should care about possible rewards. In situations
+    # when the agent should be acting in the present in order
+    # to prepare for rewards in the distant future, this
+    # value should be large. In cases when rewards are more
+    # immediate, it can be smaller.
+    #  Typical Range: 0.8 - 0.995
+
+    gamma: 0.90
+    hidden_units: 160
+    lambd: 0.95
+    learning_rate: 3.0e-3
+    max_steps: 5.0e6
+    memory_size: 256
+    normalize: false
+    num_epoch: 8
+    num_layers: 2
+    time_horizon: 1024
+    sequence_length: 64
+    summary_freq: 128
+    use_recurrent: false
+    use_curiosity: true
+    curiosity_strength: 0.01
+    curiosity_enc_size: 128
+
+DistanceVectorBrain:
+    trainer: ppo
+    batch_size: 2000
+    buffer_size: 4000
+    beta: 5.0e-3    
+    epsilon: 0.5
+    gamma: 0.5
+    hidden_units: 64
+    lambd: 0.95
+    learning_rate: 3.0e-3
+    max_steps: 5.0e6
+    num_epoch: 1
+    num_layers: 8
+    time_horizon: 1000
+    summary_freq: 500
+    use_recurrent: false
+    use_curiosity: true
+    curiosity_strength: 0.01
+    curiosity_enc_size: 128
+
+PositionVectorBrain:
+    trainer: ppo
+    batch_size: 2000
+    buffer_size: 4000
+    beta: 5.0e-3    
+    epsilon: 0.5
+    gamma: 0.5
+    hidden_units: 64
+    lambd: 0.95
+    learning_rate: 3.0e-3
+    max_steps: 5.0e6
+    num_epoch: 1
+    num_layers: 8
+    time_horizon: 1000
+    summary_freq: 500
+    use_recurrent: false
+    use_curiosity: true
+    curiosity_strength: 0.01
+    curiosity_enc_size: 128
+
