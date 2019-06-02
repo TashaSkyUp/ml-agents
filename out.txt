@@ -1,6 +1,0 @@
-
-(ml-agents) e:\ML\ml-agents>mlagents-learn config/radagast.yaml --run-id=test --train  
-
-
-	Unity Technologies
-
