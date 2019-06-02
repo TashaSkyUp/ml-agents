@@ -1,0 +1,6 @@
+/*
+!.gitignore
+!Assets/
+/Assets/*
+!Assets/ML-Agents
+!Assets/Gizmos
